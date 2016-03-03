@@ -1,0 +1,82 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>PolyDist by Fred-Barclay</title>
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/github-dark.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script src="javascripts/respond.js"></script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <!--[if lt IE 8]>
+    <link rel="stylesheet" href="stylesheets/ie.css">
+    <![endif]-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+  </head>
+  <body>
+      <div id="header">
+        <nav>
+          <li class="fork"><a href="https://github.com/Fred-Barclay/PolyDist">View On GitHub</a></li>
+          <li class="downloads"><a href="https://github.com/Fred-Barclay/PolyDist/zipball/master">ZIP</a></li>
+          <li class="downloads"><a href="https://github.com/Fred-Barclay/PolyDist/tarball/master">TAR</a></li>
+          <li class="title">DOWNLOADS</li>
+        </nav>
+      </div><!-- end header -->
+
+    <div class="wrapper">
+
+      <section>
+        <div id="title">
+          <h1>PolyDist</h1>
+          <p></p>
+          <hr>
+          <span class="credits left">Project maintained by <a href="https://github.com/Fred-Barclay">Fred-Barclay</a></span>
+          <span class="credits right">Hosted on GitHub Pages &mdash; Theme by <a href="https://twitter.com/michigangraham">mattgraham</a></span>
+        </div>
+
+        <p>WARNING! MEN AT WORK!
+Please excuse this webpage while it is being created.</p>
+
+<h3>
+<a id="welcome-to-polydist" class="anchor" href="#welcome-to-polydist" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Welcome to PolyDist!</h3>
+
+<p>PolyDist is a Python 3 code, aimed at engineers and physicists. It allows the user to define a point and a polygonal field in a 2D Cartesian Coordinate system, rotate a ray around that point every <em>x</em> degrees, and then return the distances from the point to the intersection of its rays.
+Graphing and exporting distances is also supported.</p>
+
+<p>For example, if you have a point (2,3) and a polygonal field with vertices at [(4,4), (7,4), (8,7), (6,5), (5,6), (3,5)], and you want to calculate the distances from (2,3) to the intersection of a ray with the field perimeter every 10 degrees, you would call the function like this:
+python3 PolyDist.py
+Main point coordinates: (2,3)
+Vertices coordinates: [(4,4), (7,4), (8,7), (6,5), (5,6), (3,5)]
+Angle of rotation: 10</p>
+
+<p>If desired, you can then export the distances to an .xlsx spreadsheet, and/or show the graph in a new window: <img src="https://imgur.com/DEwNxgU" alt="show the graph in a new window"></p>
+
+<h3>
+<a id="history" class="anchor" href="#history" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>History</h3>
+
+<p>PolyDist started out as a Matlab (R) project in summer 2014. After writing the code in Matlab, I forked it into the Python 3 language a year later. The original Matlab code is still being maintained by another contributor. Several features of the Matlab code are making their way into PolyDist, along with some exciting innovations of our own!</p>
+
+<h3>
+<a id="authors-and-contributors" class="anchor" href="#authors-and-contributors" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Authors and Contributors</h3>
+
+<p>You can <a href="https://help.github.com/articles/basic-writing-and-formatting-syntax/#mentioning-users-and-teams" class="user-mention">@mention</a> a GitHub username to generate a link to their profile. The resulting <code>&lt;a&gt;</code> element will link to the contributor’s GitHub Profile. For example: In 2007, Chris Wanstrath (<a href="https://github.com/defunkt" class="user-mention">@defunkt</a>), PJ Hyett (<a href="https://github.com/pjhyett" class="user-mention">@pjhyett</a>), and Tom Preston-Werner (<a href="https://github.com/mojombo" class="user-mention">@mojombo</a>) founded GitHub.</p>
+
+<h3>
+<a id="support-or-contact" class="anchor" href="#support-or-contact" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Support or Contact</h3>
+
+<p>Having trouble with PolyDist? Contact me via <a href="BugsAteFred@gmail.com">email</a> and I'll help you figure it out! GPG/PGP signing/encryption is <a href="https://github.com/Fred-Barclay/PolyDist/blob/master/README.md">preferred</a> but not required. </p>
+
+<p>Discovered a bug or limitation? Unsure about something? Then hop on over to our <a href="https://github.com/Fred-Barclay/PolyDist/issues">Issues page</a> and let me know!</p>
+
+<p>If you think that a feature or bug squash needs to be implemented, and you can code it yourself, please open a pull request. </p>
+      </section>
+
+    </div>
+    <!--[if !IE]><script>fixScale(document);</script><![endif]-->
+    
+  </body>
+</html>
