@@ -22,7 +22,7 @@
         <nav>
           <li class="fork"><a href="https://github.com/Fred-Barclay/PolyDist">View On GitHub</a></li>
           <li class="downloads"><a href="https://github.com/Fred-Barclay/PolyDist/zipball/master">ZIP</a></li>
-          <li class="downloads"><a href="https://github.com/Fred-Barclay/PolyDist/tarball/master">TAR</a></li>
+          <li class="downloads"><a href="https://github.com/Fred-Barclay/PolyDist/tarball/master">TAR.GZ</a></li>
           <li class="title">DOWNLOADS</li>
         </nav>
       </div><!-- end header -->
@@ -34,50 +34,91 @@
           <h1>PolyDist</h1>
           <p></p>
           <hr>
-          <span class="credits left">Project maintained by <a href="https://github.com/Fred-Barclay">Fred-Barclay</a></span>
-          <span class="credits right">Hosted on GitHub Pages &mdash; Theme by <a href="https://twitter.com/michigangraham">mattgraham</a></span>
+          <span class="credits left">Project maintained by <a href="https://
+            github.com/Fred-Barclay">Fred-Barclay</a></span>
+          <span class="credits right">Hosted on GitHub Pages &mdash; Theme by
+            <a href="https://twitter.com/michigangraham">mattgraham</a></span>
         </div>
 
-        <p>WARNING! MEN AT WORK!
-Please excuse this webpage while it is being created.</p>
+        <p><B>WARNING! MEN AT WORK!</B></p>
+<p>Please excuse this webpage while it is being created.</p>
 
 <h3>
-<a id="welcome-to-polydist" class="anchor" href="#welcome-to-polydist" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Welcome to PolyDist!</h3>
+<a id="welcome-to-polydist" class="anchor" href="#welcome-to-polydist"
+aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link">
+</span></a>Welcome to PolyDist!</h3>
 
-<p>PolyDist is a Python 3 code, aimed at engineers and physicists. It allows the user to define a point and a polygonal field in a 2D Cartesian Coordinate system, rotate a ray around that point every <em>x</em> degrees, and then return the distances from the point to the intersection of its rays.
+<p>PolyDist is a Python 3 code, aimed at engineers and physicists. It allows the
+  user to define a point and a polygonal field in a 2D Cartesian coordinate
+  system, rotate a ray around that point every <em>x</em> degrees, and then
+  return the distances from the point to the intersection of its rays.
 Graphing and exporting distances is also supported.</p>
 
-<p>For example, if you have a point (2,3) and a polygonal field with vertices at [(4,4), (7,4), (8,7), (6,5), (5,6), (3,5)], and you want to calculate the distances from (2,3) to the intersection of a ray with the field perimeter every 10 degrees, you would call the function like this:</p>
-<p>python3 PolyDist.py</p>
-<p>Main point coordinates: (2,3)</p>
-<p>Vertices coordinates: [(4,4), (7,4), (8,7), (6,5), (5,6), (3,5)]</p>
-<p>Angle of rotation: 10</p>
+<p>For example, if you have a point (2,3) and a polygonal field with vertices at
+  [(4,4), (7,4), (8,7), (6,5), (5,6), (3,5)], and you want to calculate the
+  distances from (2,3) to the intersection of a ray with the field perimeter
+  every 10 degrees, you would call the function like this:</p>
+<p><b>python3 PolyDist.py</b></p>
+<p><i>Main point coordinates: (2,3)</p>
+  <p>Vertices coordinates: [(4,4), (7,4), (8,7), (6,5), (5,6), (3,5)]</p>
+  <p>Angle of rotation: 10</i></p>
 
-<p>If desired, you can then export the distances to an .xlsx spreadsheet, and/or show the graph in a new window:</p>
+<p>If desired, you can then export the distances to an .xlsx spreadsheet, and/or
+   show the graph in a new window:</p>
 <img src="images/figure_1.png" alt="Graph 1" class="inline"/>
 
+<BR>&nbsp;<BR>
+
+<p>As an additional example, let's reuse the same polygonal field, but choose a
+  different point, (5,5), and rotate the ray every 15 degrees:<p>
+
+<p><b>python3 PolyDist.py</b></p>
+<p><i>Main point coordinates: (5,5)</p>
+  <p>Vertices coordinates: [(4,4), (7,4), (8,7), (6,5), (5,6), (3,5)]</p>
+  <p>Angle of rotation: 15</i></p>
+<img src="images/figure_2.png" alt="Graph 2" class="inline"/>
+<BR>&nbsp;<BR>
+
+
 <h3>
-<a id="history" class="anchor" href="#history" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>History</h3>
+<a id="history" class="anchor" href="#history" aria-hidden="true">
+  <span aria-hidden="true" class="octicon octicon-link"></span></a>History</h3>
 
-<p>PolyDist started out as a Matlab (R) project in summer 2014. After writing the code in Matlab, I forked it into the Python 3 language a year later. The original Matlab code is still being maintained by another contributor. Several features of the Matlab code are making their way into PolyDist, along with some exciting innovations of our own!</p>
+<p>PolyDist started out as a Matlab (R) project in summer 2014. After writing
+  the code in Matlab, I forked it into the Python 3 language a year later. The
+  original Matlab code is still being maintained by another contributor. Several
+  features of the Matlab code are making their way into PolyDist, along with
+  some exciting innovations of our own!</p>
 
 <h3>
-<a id="authors-and-contributors" class="anchor" href="#authors-and-contributors" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Authors and Contributors</h3>
-
-<p>You can <a href="https://help.github.com/articles/basic-writing-and-formatting-syntax/#mentioning-users-and-teams" class="user-mention">@mention</a> a GitHub username to generate a link to their profile. The resulting <code>&lt;a&gt;</code> element will link to the contributor’s GitHub Profile. For example: In 2007, Chris Wanstrath (<a href="https://github.com/defunkt" class="user-mention">@defunkt</a>), PJ Hyett (<a href="https://github.com/pjhyett" class="user-mention">@pjhyett</a>), and Tom Preston-Werner (<a href="https://github.com/mojombo" class="user-mention">@mojombo</a>) founded GitHub.</p>
+<a id="authors-and-contributors" class="anchor" href="#authors-and-contributors"
+ aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link">
+ </span></a>Authors and Contributors</h3>
+<p>PolyDist is written and maintained by Fred Barclay, an enthusiastic
+  open-source user and coder.
 
 <h3>
-<a id="support-or-contact" class="anchor" href="#support-or-contact" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Support or Contact</h3>
+<a id="support-or-contact" class="anchor" href="#support-or-contact"
+aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span>
+</a>Support or Contact</h3>
 
-<p>Having trouble with PolyDist? Contact me via <a href="https://github.com/Fred-Barclay/PolyDist/blob/master/README.md">email</a> and I'll help you figure it out! GPG/PGP signing/encryption is preferred but not required. </p>
+<p>Having trouble with PolyDist? Contact me via <a href=
+  "https://github.com/Fred-Barclay/PolyDist/blob/master/README.md">email</a> and
+  I'll help you figure it out! GPG/PGP signing/encryption is preferred but not
+  required. </p>
 
-<p>Discovered a bug or limitation? Unsure about something? Then hop on over to our <a href="https://github.com/Fred-Barclay/PolyDist/issues">Issues page</a> and let me know!</p>
+<p>Discovered a bug or limitation? Unsure about something? Then hop on over to
+  our <a href="https://github.com/Fred-Barclay/PolyDist/issues">Issues page</a>
+  and let me know!</p>
 
-<p>If you think that a feature or bug squash needs to be implemented, and you can code it yourself, please open a pull request. </p>
+<p>If you think that a feature or bug squash needs to be implemented, and you
+  can code it yourself, please open a pull request. If you CAN'T code it
+  yourself, visit the <a href="https://github.com/Fred-Barclay/PolyDist/issues">
+  Issues page</a> and let me know all about it. You'll be glad you did! </p>
       </section>
 
     </div>
     <!--[if !IE]><script>fixScale(document);</script><![endif]-->
-    
+
   </body>
 </html>
