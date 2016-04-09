@@ -8,6 +8,8 @@
 # You may:                                                             #
 # (a). Use this code as you see fit.                                   #
 # (b). Modify this code as needed.                                     #
+# (c). Redistribute copies, whether modified or unchanged, freely.     #
+#                                                                      #
 # You may not:                                                         #
 # (a). Change the text within this comment box or modify the box in    #
 #      any way (this also means you may not remove the box.)           #
@@ -22,10 +24,10 @@
 ########################################################################
 
 # PolyDist.py
-# Version # 0.21
+# Version 0.22
 #
 #
-# This code was written in the Python 3 language.
+# This code was written in Python 3.
 #
 # Please email all complaints, comments, suggestions, or bugs to
 # BugsAteFred@gmail.com or contact me through github.
@@ -108,9 +110,9 @@ print('Distance =',Distance)
 
 #++++++++++++Export to Excel/Calc
 
-xL = input('\nExport data to .xlsx file? Y/n ')
+xL = input('\nExport data to .xlsx file? y/N ')
 
-if xL == 'Y':
+if xL == 'y' or xL == 'Y':
 
     workbook = xlsxwriter.Workbook('PolyDist.xlsx')
     worksheet = workbook.add_worksheet()
@@ -127,9 +129,9 @@ if xL == 'Y':
     print('Data exported sucessfully!')
 
 #++++++++++++++++Plotting Segment!
-u_plot = input('\nPlot figure on unit graph? Y/n ')
+u_plot = input('\nPlot figure on unit graph? y/N ')
 
-if u_plot == 'Y':
+if u_plot == 'y' or u_plot == 'Y':
 
     # Vertices
     plt.plot([f[0] for f in list(poly.coords)],

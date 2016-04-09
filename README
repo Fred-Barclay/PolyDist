@@ -20,6 +20,9 @@ Matplotlib 1.4.2
 Shapely 1.4.3
 Xlsxwriter 0.5.2
 
+You may succeed in running PolyDist under newer/older versions than those listed
+above--they are just the instances I've tested. If so, please let me know!
+
 ================================================================================
 License is provided in the code and reproduced here:
 ########################################################################
@@ -27,6 +30,8 @@ License is provided in the code and reproduced here:
 # You may:                                                             #
 # (a). Use this code as you see fit.                                   #
 # (b). Modify this code as needed.                                     #
+# (c). Redistribute copies, whether modified or unchanged, freely.     #
+#                                                                      #
 # You may not:                                                         #
 # (a). Change the text within this comment box or modify the box in    #
 #      any way (this also means you may not remove the box.)           #
@@ -85,35 +90,65 @@ Both regular and irregular polygons are supported.
 
 ================================================================================
 Revision History:
-0.21 Restored imports of xlsxwriter and matplotlib.pyplot to all instances.
 
-0.2	 Corrected spelling in license, made creating an .xlsx spreadsheet and/or
-     plotting a graph optional, and consistently used single quotes ('') for
-     strings instead of double quotes. Importing xlsxwriter and matplotlib.pyplot 
-	 were only triggered if the user chose to export the data to a spreadsheet or 
-	 plot the figure, respectively, saving startup time.
-     Edited README.md.
+0.22
+Changed default behavior of graphing/exporting to Calc to 'N'. Allowed either 
+'y' or 'Y' to be "yes". 
 
-0.1  Removed the need for a Python function and migrated to a dot decimal point
-     in documentation, as well as improved code commenting.
+Modified roadmap in PolyDist_README.txt
 
-0,02 Set the .xlsx file to be created before the graph. Previously, the graph
-	 had to be closed before the spreadsheet was created.
+Began signing commits with GPG as per "git commit -m -S <message>". Continuted 
+to create detached, armoured signatures.
 
-0,01 Initial release.
+The following permission was added to the license: "(c). Redistribute copies, 
+whether modified or unchanged, freely."
+
+Edited README.md to reflect GPG changes.
+
+
+0.21
+Restored imports of xlsxwriter and matplotlib.pyplot to all instances.
+
+
+0.2
+Corrected spelling in license, made creating an .xlsx spreadsheet and/or
+plotting a graph optional, and consistently used single quotes ('') for strings
+instead of double quotes. Importing xlsxwriter and matplotlib.pyplot were only 
+triggered if the user chose to export the data to a spreadsheet or plot the 
+figure, respectively, saving startup time.
+
+Edited README.md.
+
+
+0.1  
+Removed the need for a Python function and migrated to a dot decimal point in 
+documentation, as well as improved code commenting.
+
+
+0,02
+Set the .xlsx file to be created before the graph. Previously, the graph had to 
+be closed before the spreadsheet was created.
+
+
+0,01 
+Initial release.
 
 
 ================================================================================
 Roadmap:
+
+v. 1: Implement GUI front-end. 
+v. 2: Add graphics field support.
+
 (Not in any particular order)
 1. Possibly move to .odt format instead of .xlsx.
-2. Add GUI functionality.
-3. Use a true ray instead of a really long line segment.
-4. Have the .xlsx returned as a cascading filename, instead of overwriting the
+2. Use a true ray instead of a really long line segment.
+3. Have the .xlsx returned as a cascading filename, instead of overwriting the
    same file every run.
-5. Let the user define the .xlsx file name (negate item 4).
-6. Improve the README.
-7. Improve colouring on the graph.
+4. Let the user define the .xlsx file name (negate item 4).
+5. Improve the README.
+6. Improve colouring on the graph.
+7. Consider moving to the GPL license.
 
 
 ================================================================================
