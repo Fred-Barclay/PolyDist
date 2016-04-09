@@ -9,7 +9,7 @@ keys.gnupg.net (*temporarily unavailable*),
 and [pool.sks-keyservers.net] (https://keyserver.mattrude.com/search/vindex/0x7338CE369A928102).
 
 *UPDATE*
-GitHub now supports integrated GPG-signing. Testing in progress...
+GitHub now supports integrated GPG-signing. Testing is in progress...
 
 Fingerprint is 9A928102; email is BugsAteFred@gmail.com.
 PGP/GPG signed and encrypted communication is preferred but not required.
