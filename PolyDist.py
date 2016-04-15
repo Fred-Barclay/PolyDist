@@ -24,7 +24,7 @@
 ########################################################################
 
 # PolyDist.py
-# Version 0.22
+# Version 0.2.3 RC
 #
 #
 # This code was written in Python 3.
@@ -142,7 +142,7 @@ if u_plot == 'y' or u_plot == 'Y':
 
     #
 
-    # Intersectionss
+    # Intersections
     plt.plot([g[0][0] for g in intersections], [g[0][1] for g in
         intersections],'g^' )
 
