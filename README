@@ -8,6 +8,10 @@ University of Texas M. D. Anderson Cancer Center. This code is not affiliated
 with M. D. Anderson Cancer Center and is clean of any code authored or owned by
 this institution.
 
+Website:
+https://fred-barclay.github.io/PolyDist/
+GitHub Repo: https://github.com/Fred-Barclay/PolyDist
+
 Requires:
 Python 3.4
 Matplotlib 1.4.2
@@ -24,28 +28,35 @@ You may succeed in running PolyDist under newer/older versions than those listed
 above--they are just the instances I've tested. If so, please let me know!
 
 ================================================================================
-License is provided in the code and reproduced here:
-########################################################################
-# This code (PolyDist) was written by Fred Barclay.                    #
-# You may:                                                             #
-# (a). Use this code as you see fit.                                   #
-# (b). Modify this code as needed.                                     #
-# (c). Redistribute copies, whether modified or unchanged, freely.     #
-#                                                                      #
-# You may not:                                                         #
-# (a). Change the text within this comment box or modify the box in    #
-#      any way (this also means you may not remove the box.)           #
-# (b). Claim original authorship. Any additional authors or modifiers  #
-#      may be named as such.                                           #
-#                                                                      #
-# Usage of this code is at your own risk. Notwithstanding any other    #
-# guarantees in any part of the code, the author of the original code, #
-# known as Fred Barclay, is and shall be in no way responsible for any #
-# damages arising from the use of this code. By using this code, you   #
-# accept these terms and all responsibilities.                         #
-########################################################################
+Licensing:
+This program is dual-licensed under the GPL v2 , or (at your option) any later
+version, and the following terms:
 
+	You are hereby granted a perpetual, irrevocable license to copy, modify,
+	publish, release, and distribute this program as you see fit. However,
+	under no circumstances may you claim original authorship of this program;
+	you must credit the original author(s). You may not remove the listing of
+	the original author(s) from the source code, though you may change the
+	licensing terms, provided that your terms do not permit the removal of the
+	author(s) listing. If you publish or release binaries or similarly compiled
+	files, you must credit the author(s) on your home and/or distribution page,
+	whichever applies. In your documentation, you must credit the author(s) for
+	the portions of their code you have used. This, of course, does not revoke
+	or change your right to claim original authorship to any portions of the
+	code that you have written.
 
+	You must agree to assume all liability for your use of the program, and to
+	indemnify and hold harmless the author(s) of this program from any liability
+	arising from use of this program, including, but not limited to: loss of
+	data, death, dismemberment, or injury, and all consequential and
+	inconsequential damages.
+
+	For clarification, contact Fred Barclay:
+		https://github.com/Fred-Barclay
+		BugsAteFred@gmail.com
+
+A copy of the GPL v2 is included along with this program, in the GPLv2_LICENSE
+file.
 ================================================================================
 PolyDist calculates the distances from a main point to other points (subpoints)
 along the perimeter of a 2-dimensional field. The subpoints are not
@@ -91,16 +102,28 @@ Both regular and irregular polygons are supported.
 ================================================================================
 Revision History:
 
+0.2.3
+Moved to a new, dual-license model.
+
+Began releasing with semantic versioning.
+
+Revised depencies listed at start of code. Only Shapely is required; xlsxwriter
+and matplotlib are recommended.
+
+Added 'Figure graphed sucessfully!' message (aids debugging if needed).
+
+Corrected spelling of 'Intersections'
+
 0.22
-Changed default behavior of graphing/exporting to Calc to 'N'. Allowed either 
-'y' or 'Y' to be "yes". 
+Changed default behavior of graphing/exporting to Calc to 'N'. Allowed either
+'y' or 'Y' to be "yes".
 
 Modified roadmap in PolyDist_README.txt
 
-Began signing commits with GPG as per "git commit -m -S <message>". Continuted 
+Began signing commits with GPG as per "git commit -m -S <message>". Continuted
 to create detached, armoured signatures.
 
-The following permission was added to the license: "(c). Redistribute copies, 
+The following permission was added to the license: "(c). Redistribute copies,
 whether modified or unchanged, freely."
 
 Edited README.md to reflect GPG changes.
@@ -113,31 +136,31 @@ Restored imports of xlsxwriter and matplotlib.pyplot to all instances.
 0.2
 Corrected spelling in license, made creating an .xlsx spreadsheet and/or
 plotting a graph optional, and consistently used single quotes ('') for strings
-instead of double quotes. Importing xlsxwriter and matplotlib.pyplot were only 
-triggered if the user chose to export the data to a spreadsheet or plot the 
+instead of double quotes. Importing xlsxwriter and matplotlib.pyplot were only
+triggered if the user chose to export the data to a spreadsheet or plot the
 figure, respectively, saving startup time.
 
 Edited README.md.
 
 
-0.1  
-Removed the need for a Python function and migrated to a dot decimal point in 
+0.1
+Removed the need for a Python function and migrated to a dot decimal point in
 documentation, as well as improved code commenting.
 
 
 0,02
-Set the .xlsx file to be created before the graph. Previously, the graph had to 
+Set the .xlsx file to be created before the graph. Previously, the graph had to
 be closed before the spreadsheet was created.
 
 
-0,01 
+0,01
 Initial release.
 
 
 ================================================================================
 Roadmap:
 
-v. 1: Implement GUI front-end. 
+v. 1: Implement GUI front-end.
 v. 2: Add graphics field support.
 
 (Not in any particular order)
@@ -165,3 +188,5 @@ above.
 Final thoughts:
 
 If it ain't broke, fix it until it is!
+Generating random numbers is too important to be left to chance.
+Keep smiling! It makes people wonder what you've been up to.

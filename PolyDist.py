@@ -55,7 +55,7 @@
 #        option) and comment out lines 63-64, or
 #   (b). Comment out lines 63-64 and 135-189.
 #
-# Version 0.2.3 RC
+# Version 0.2.3
 #
 from shapely import affinity
 from shapely.geometry import LinearRing, LineString, Point
