@@ -104,7 +104,7 @@ for a in range(len(rot_sequence)):
 	inter = poly.intersection(ray_rot)
 
 	if inter.is_empty:
-	print('No Intersection found for ray', a)
+		print('No Intersection found for ray', a)
 
 #	If there are more than 1 intersections.
 	elif inter.geom_type.startswith('Multi') \
@@ -145,7 +145,7 @@ if xL == 'y' or xL == 'Y':
 		try:
 			if len(Distance[s]) != 1:
 				for t in range(len(Distance[s])):
-				worksheet.write( s, t, Distance[s][t])
+					worksheet.write( s, t, Distance[s][t])
 		except TypeError:
 			worksheet.write( s, 0, Distance[s])
 
