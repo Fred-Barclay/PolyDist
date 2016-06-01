@@ -1,5 +1,5 @@
 # PolyDist
-Repo for PolyDist code. https://fred-barclay.github.io/PolyDist/
+Repo for PolyDist code. https://fred-barclay.github.io/PolyDist/  
 [![Build Status](https://travis-ci.org/Fred-Barclay/PolyDist.svg?branch=master)](https://travis-ci.org/Fred-Barclay/PolyDist)
 
 
