@@ -1,7 +1,5 @@
 # PolyDist
 Repo for PolyDist code. https://fred-barclay.github.io/PolyDist/  
-[![Build Status](https://travis-ci.org/Fred-Barclay/PolyDist.svg?branch=master)](https://travis-ci.org/Fred-Barclay/PolyDist)
-
 
 PolyDist is a distance-finding Python 3 program that aims to make 2-dimensional
 linear/polygonal distance calculations easier. Originally developed for
