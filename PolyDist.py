@@ -81,7 +81,7 @@ ray_main = LineString([(pt), (x_1, pt[1])])
 
 # Determines how many times to rotate 'ray_main'; and
 # therefore, how many distances to find.
-rot_sequence = range(0,360,deg)
+rot_sequence = range(0, 360, deg)
 
 # Defines the point in Shapely that distances are calculated from.
 point = Point(pt)
@@ -129,7 +129,7 @@ for a in range(len(rot_sequence)):
 		intersections.append(list(inter.coords))
 		Distance.append(dist)
 
-print('Distance =',Distance)
+print('Distance = ', Distance)
 
 
 #++++++++++++Export to Excel/Calc
